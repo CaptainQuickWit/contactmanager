@@ -94,12 +94,16 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/ngf-bootstrap/dist/bootstrap.min.css",
+              
+              "node_modules/bootstrap/dist/css/bootstrap-theme.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_module/ngf-bootstrap/dist/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.js"
+              
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           }
         }

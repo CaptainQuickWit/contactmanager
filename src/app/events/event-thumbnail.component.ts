@@ -10,8 +10,8 @@ import { Component, Input } from '@angular/core'
         <div class = "text-info bg-dark"> Date: {{event.date}}</div>
         <div> Time: {{event.time}}</div>
         <div> Price: \${{event.price}}</div>
-        <div class="well hoverwell thumbnail">
-            <span>Location: {{event.location.address}}</span>
+        <div class="well hoverwell thumbnail bg-info">
+            <span class = "text-dark">Location: {{event.location.address}}</span>
             <span>&nbsp;</span>
             <span>{{event.location.city}}, {{event.location.country}}</span>
         </div>

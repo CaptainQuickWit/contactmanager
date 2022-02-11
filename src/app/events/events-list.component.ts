@@ -3,14 +3,19 @@ import { Component } from '@angular/core'
 @Component({
     selector: 'events-list',
     template:`
-    <div>
-        <h1>Upcoming Angular Events</h1>
+    <div class = "container">
+        <h1>Upcoming Angular Events 2</h1>
         <hr/>
-        <event-thumbnail [event]="event1"></event-thumbnail>
+        <event-thumbnail #thumbnail [event]="event1"></event-thumbnail>
+        <h3>{{thumbnail.someProperty}}</h3>
+        <button class="btn btn-primary" (click)="thumbnail.logFoo()">Log me some foo</button>
     </div>
     `
 })
 export class EventsListComponent {
+    //<event-thumbnail (eventClick)="handleEventClicked($event)" [event]="event1"></event-thumbnail>
+    //<event-thumbnail (eventClick)="handleEventClicked($event)" [event]="event1"></event-thumbnail>
+    //<button class="btn btn-primary" (click)="thumbnail.logFoo()">Log me some foo</button>
     event1 = {
         id: 1,
         name: 'Angular Connect',
@@ -23,5 +28,9 @@ export class EventsListComponent {
             city: 'London',
             country: 'England'
         }
+    }
+
+    handleEventClicked(data: any) {
+        console.log('received:'+data);
     }
 }

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
     <mat-icon>face</mat-icon>
     Click me!
   </button>
-  <mat-checkbox>Check me!</mat-checkbox>>
+  <mat-checkbox>Check me!</mat-checkbox>
   `,
   styles: [
   ]

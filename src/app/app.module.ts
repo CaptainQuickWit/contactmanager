@@ -1,14 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+
 import { Routes, RouterModule } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
-  { path: 'demo', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)},
-  { path: '**', redirectTo: 'demo'}
+  { path: 'demo', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule) },
+  { path: '**', redirectTo: 'demo' }
 ];
+
 @NgModule({
   declarations: [
     AppComponent
@@ -23,17 +26,3 @@ const routes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

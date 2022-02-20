@@ -6,7 +6,6 @@ const routes: Routes = [
   { path: 'buttons', component: ButtonsComponent },
   { path: '**', redirectTo: 'buttons'}
 ];
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactmanagerAppComponent } from './contactmanager/contactmanager-app.component';
+import { ToolbarComponent } from './contactmanager/components/toolbar/toolbar.component';
 
 const routes: Routes = [
   { path: 'demo', loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule) },
@@ -14,7 +16,9 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactmanagerAppComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -26,3 +30,5 @@ const routes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

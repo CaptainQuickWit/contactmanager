@@ -2,10 +2,8 @@
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    
     flex-wrap: wrap;
     justify-content: space-around;
-    
 }
 
 .flex-item {
@@ -16,7 +14,6 @@
     font-size:3em;
     line-height:150px;
     align-items:center;
-    
 }
 
 @media all and (max-width:800px) {

@@ -11,17 +11,13 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 const routes: Routes = [
   {
-
     path: '', component: ContactmanagerAppComponent,
     children: [
       {path:'', component: MainContentComponent}
     ]
-
   },
-   
   { path: '**', redirectTo: 'contactmanager' }
 ];
-
 @NgModule({
   declarations: [
     ContactmanagerAppComponent, MainContentComponent, SidenavComponent, ToolbarComponent

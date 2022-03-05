@@ -8,6 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { ContactmanagerAppComponent } from './contactmanager-app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { HttpClientModule} from '@angular/common/http';
 
 const routes: Routes = [
   {
@@ -26,6 +27,7 @@ const routes: Routes = [
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
+    HttpClientModule,
     FormsModule,
     RouterModule.forChild(routes)
   ]

@@ -13,7 +13,6 @@
     flex-direction: column;
   }
   
-.app-sidenav {
-    
-    width: 240px;
+.app-sidenav {   
+  width: 240px;
 }

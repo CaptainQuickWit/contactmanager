@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactmanagerAppComponent } from './contactmanager/contactmanager-app.component';
 import { ToolbarComponent } from './contactmanager/components/toolbar/toolbar.component';
+import { UserService } from './contactmanager/services/user.service';
 
 const routes: Routes = [
   { path: 'contactmanager', loadChildren: ()=> import('./contactmanager/contactmanager.module').then(m => m.ContactmanagerModule)},

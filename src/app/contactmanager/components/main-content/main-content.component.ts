@@ -10,19 +10,13 @@ import { UserService } from '../../services/user.service';
 })
 export class MainContentComponent implements OnInit {
 
-
   user?: User;
   constructor(private route: ActivatedRoute, private service: UserService) {}
-    
-
-
-
-
+  
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      const id = params['id'];
-      this.user = this.service.userById(id);
-    })
-
+      this.route.params.subscribe(params => {
+        const id = params['id'];
+        this.service.userById(id);
+      })
   }
 }

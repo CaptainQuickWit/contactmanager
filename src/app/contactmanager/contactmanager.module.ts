@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ContactmanagerAppComponent } from './contactmanager-app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { HttpClientModule} from '@angular/common/http';
+import { UserService } from './services/user.service';
 
 const routes: Routes = [
   {
@@ -31,6 +32,9 @@ const routes: Routes = [
     HttpClientModule,
     FormsModule,
     RouterModule.forChild(routes)
+  ],
+  providers: [
+    UserService
   ]
 })
 export class ContactmanagerModule { }

@@ -1,9 +1,9 @@
 
-<div *ngIf="!user">
+<div *ngIf="!user" class = "container">
     <mat-spinner></mat-spinner>
 
 </div>
-<div *ngIf="user">
+<div *ngIf="user" class = "container">
     <mat-card>
         <mat-card-header>
             <mat-icon mat-card-avatar svgIcon="{{user.avatar}}"> </mat-icon>
@@ -20,4 +20,4 @@
     </mat-card>
 
 </div>
-<p>main-content works!</p>
+

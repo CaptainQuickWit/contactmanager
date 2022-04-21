@@ -19,8 +19,10 @@ export class ContactmanagerAppComponent implements OnInit {
     iconRegistry.addSvgIconSet(
       sanitizer.bypassSecurityTrustResourceUrl('assets/avatars.svg'));
   }
+  
 
   ngOnInit(): void {
+    
   }
 
 }
